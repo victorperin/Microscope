@@ -1,4 +1,5 @@
 if (Posts.find().count() === 0) {
+  console.log("Populando banco de dados...");
   Posts.insert({
     title: 'Introducing Telescope',
     author: 'Sacha Greif',
@@ -16,4 +17,6 @@ if (Posts.find().count() === 0) {
     author: 'Tom Coleman',
     url: 'http://themeteorbook.com'
   });
+}else{
+  console.log("Banco de dados já está populado, por favor, execute 'meteor reset' no terminal.")
 }
