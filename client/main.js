@@ -1,1 +1,1 @@
-Meteor.subscribe('posts', 'Tom Coleman');
+Meteor.subscribe('posts');
